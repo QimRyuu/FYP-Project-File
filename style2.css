@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    background: #85c1e9; /* Soft blue background color */
+    color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 600;
+    color: #000; /* Black text color */
+}
+
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    height: 50px;
+    background: #434989;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+form input {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+form button {
+    padding: 0 40px;
+    height: 100%;
+    background: #192a56; /* Dark blue button color */
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 18px;
+}
+
+#show-more-btn {
+    background: #ff3929;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    display: none;
+}
+
+#search-result {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+#search-result img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #192a56; /* Dark blue background color */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 70px; /* Adjust the width as per your logo's dimensions */
+    height: 50px;
+    margin-right: 10px; /* Add some right margin for spacing */
+}
+
+.logo a {
+    color: white; /* Set text color to white */
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align navbar buttons to the top right */
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: flex-end;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: black;
+}
+
+
+
+.nav-toggle-label {
+  cursor: pointer;
+  display: none;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  #nav-toggle:checked + .menu {
+    display: flex;
+  }
+
+  .nav-toggle-label {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+}
+
+.content {
+  padding: 20px;
+}
+/* Heading styles */
+h2 {
+    color: #000; /* Black text color */
+}
+
+/* Link styles */
+a {
+    color: #000; /* Black text color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#chat-container {
+    width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#chat-box {
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+#chat-box div {
+    margin-bottom: 5px;
+}
+
+#file-container {
+    margin-top: 20px;
+}
+#chat-container {
+    width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#chat-box {
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+#chat-box div {
+    margin-bottom: 5px;
+}
+
+#file-container {
+    margin-top: 20px;
+}
+
+/* Style for cheerful search result buttons */
+.search-result-button {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #1976D2; /* Dark blue color */
+  color: #000; /* Dark black text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-result-button:hover {
+  background-color: #2196F3; /* Slightly lighter blue color on hover */
+}
+

@@ -1,0 +1,58 @@
+body {
+    background-color: #000; /* Change background color to black */
+    color: #fff; /* Setting text color to white for better readability */
+}
+
+#login-container {
+    width: 300px;
+    margin: 100px auto;
+    background-color: #222; /* Dark gray background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adding a subtle shadow */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* White text color */
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #888; /* Light gray border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333; /* Darker gray input background color */
+    color: #fff; /* White text color */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+/* Add more styling as needed */
+.logo {
+    width: 100px; /* Adjust the width as per your logo's dimensions */
+    height: 100px;
+    margin: 0 auto 20px; /* Add some bottom margin for spacing */
+    display: block;
+}

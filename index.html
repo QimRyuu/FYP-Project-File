@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine - Mark 5</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Feha Edu.Hub</h2>
+        <img src="feha.jpeg" alt="Logo" class="logo" width="100"height="50">
+
+        <h2>Login For Admin</h2>
+        <form method="post" action="loginAuto.php">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="hidden" name="uType" value="admin"> <!-- Hidden input for user type -->
+            <button type="submit">Login</button>
+        </form>
+
+        <br><br><br>
+        <img src="feha.jpeg" alt="Logo" class="logo">
+
+        <h2>Login For User</h2>
+        <form method="post" action="regWebsite.php">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="hidden" name="uType" value="user"> <!-- Hidden input for user type -->
+            <button type="submit">Login</button>
+            <p style="text-align: right;"><span>Don't have account? <a href="register.html">Register</a> here</span></p>
+        </form>
+    </div>
+</body>
+</html>

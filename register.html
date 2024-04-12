@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register Form</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-top: 50px; /* Adjust spacing from top */
+        }
+
+        input[type=text], input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 10px 15px; /* Adjust padding as needed */
+            margin: 8px auto; /* Center the button horizontally */
+            display: block; /* Ensure the button takes up full width */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: auto; /* Allow button width to adjust based on content */
+            font-size: 16px; /* Adjust font size as needed */
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            padding: 16px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4); /* Semi-transparent background */
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px; /* Limit max width */
+            border-radius: 5px;
+        }
+
+        .close {
+            position: absolute;
+            right: 15px;
+            top: 0;
+            color: #000;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h2>REGISTER FORM</h2>
+
+<button onclick="document.getElementById('id02').style.display='block'">Register</button>
+
+<div id="id02" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="document.getElementById('id02').style.display='none'">&times;</span>
+        
+        <form action="regWebsite.php" method="post">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="hidden" name="uType" value="user"> <!-- Set user type as hidden -->
+            <button type="submit" name="save">Save</button>
+        </form>
+        
+        <div class="container">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<form action="index.html" method="post">
+    <input type="submit" name="goback" value="Go Back">
+</form>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id02');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
